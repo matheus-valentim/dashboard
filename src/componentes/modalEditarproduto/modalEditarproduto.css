@@ -1,0 +1,117 @@
+.modalEditarProduto {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.185);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+}
+.div-formModal {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+.modalContainerEditarProduto {
+	width: 750px;
+	height: 600px;
+	border-radius: 12px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+}
+.titleCloseBtnModalEditarProduto {
+	display: flex;
+	justify-content: space-between;
+	flex: 1;
+}
+.titleCloseBtnModalEditarProduto button {
+	position: relative;
+	top: -15px;
+	background-color: transparent;
+	border: none;
+	font-size: 25px;
+	cursor: pointer;
+}
+.wrapperModalEditarProduto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	gap: 20px;
+}
+.formModalEditarProduto {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 30px;
+}
+.cor {
+	text-align: left;
+}
+.addCor {
+	width: 50%;
+}
+.nada {
+	content: " ";
+}
+
+.bodyModalEditarProduto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 5;
+	overflow-y: scroll;
+}
+.escuro {
+	background-color: #341b98;
+}
+.img-editar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.362);
+}
+.footerModalCalendario {
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+.link-exportar {
+	text-decoration: none;
+	color: #341b98;
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid #341b98;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: inherit;
+}
+.link-exportar:hover {
+	background-color: #341b98;
+	color: white;
+}
+.exluirBotao {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid crimson;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: inherit;
+	color: crimson;
+}
+.exluirBotao:hover {
+	background-color: crimson;
+	color: white;
+}

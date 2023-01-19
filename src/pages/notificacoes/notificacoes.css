@@ -1,0 +1,6 @@
+.notificacoes {
+	display: flex;
+}
+.notificacoesContainer {
+	flex: 6;
+}

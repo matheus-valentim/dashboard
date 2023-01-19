@@ -1,0 +1,128 @@
+.cellTeste {
+	max-width: 200px;
+	font-size: 15px;
+}
+.pedidosDatatable {
+	height: 400px;
+	padding: 20px;
+	overflow-y: scroll;
+}
+.pedidosListaTitle {
+	text-align: center;
+	font-size: 24px;
+	color: gray;
+}
+.tableCellPedidos {
+	text-align: left;
+	padding: 7px;
+	font-size: 15px;
+}
+.usuariosTable {
+	width: 100%;
+	text-align: left;
+	border-spacing: 0 1rem;
+}
+.table-tr {
+	border-collapse: separate;
+	border-spacing: 0 1em;
+}
+.table-tr:hover {
+	background-color: rgba(126, 126, 126, 0.216);
+}
+.datatableTitlePedidos {
+	width: 100%;
+	font-size: 24px;
+	color: gray;
+	padding-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 0.1px solid rgba(211, 211, 211, 0.107);
+}
+.link-usuarios {
+	text-decoration: none;
+	color: green;
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid green;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.link-usuarios:hover {
+	background-color: green;
+	color: white;
+}
+.cellWithImg {
+	display: flex;
+	align-items: center;
+}
+.cellImg {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 20px;
+}
+
+.cellWithStatus {
+	padding: 5px;
+	border-radius: 5px;
+}
+.active {
+	background-color: rgba(0, 128, 0, 0.05);
+	color: green;
+	width: 60px;
+	padding: 4px;
+	border-radius: 5px;
+}
+.pendingPedido {
+	background-color: #ffd90038;
+	color: goldenrod;
+	text-align: center;
+	width: 90px;
+	border-radius: 5px;
+	font-size: 15px;
+}
+.passive {
+	background-color: rgba(255, 0, 0, 0.05);
+	color: crimson;
+	max-width: 60px;
+	padding: 5px;
+	border-radius: 5px;
+}
+.pedidosContainer {
+	-webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+	box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+	padding: 20px;
+	margin: 20px;
+}
+.cellAction {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.viewButton {
+	padding: 2px 5px;
+	border-radius: 5px;
+	color: rgb(77, 77, 151);
+	border: 1px dotted rgba(0, 0, 139, 0.596);
+	cursor: pointer;
+	background-color: inherit;
+}
+.viewButton:hover {
+	background-color: rgb(77, 77, 151);
+	color: white;
+}
+.deleteButton:hover {
+	color: white;
+	background-color: crimson;
+}
+.deleteButton {
+	padding: 2px 5px;
+	border-radius: 5px;
+	color: crimson;
+	border: 1px dotted rgba(220, 20, 60, 0.6);
+	cursor: pointer;
+	background-color: inherit;
+}

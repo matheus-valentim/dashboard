@@ -1,0 +1,42 @@
+.chart {
+	flex: 4;
+	-webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+	box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+	padding: 10px;
+	color: gray;
+}
+
+.title-chart {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.ChartDiv {
+	display: flex;
+	gap: 10px;
+}
+.ChartButton {
+	text-decoration: none;
+	color: #341b98;
+	font-size: 15px;
+	font-weight: 400;
+	border: 1px solid #341b98;
+	padding: 3px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: inherit;
+}
+.ChartButtonAtivo {
+	color: white;
+	background-color: #341b98;
+}
+.ChartButton:hover {
+	color: white;
+	background-color: #341b98;
+}
+.importante {
+	position: initial !important;
+}
+.chartGrid {
+	stroke: rgb(228, 225, 225);
+}

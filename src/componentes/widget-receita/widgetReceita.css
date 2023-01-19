@@ -1,0 +1,28 @@
+.WidgetReceitaNum {
+	font-size: 1.3rem;
+}
+.WidgetReceitaTitle {
+	width: max-content;
+	padding: 5px;
+	font-size: 0.8rem;
+	border-radius: 10px;
+	color: white;
+}
+.WidgetReceitaLeft {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 5px;
+}
+.WidgetReceitaTitle1 {
+	background-color: #8884d8;
+}
+.WidgetReceitaTitle2 {
+	background-color: #d883d8;
+}
+.WidgetReceitaTitle3 {
+	background-color: #83d89f;
+}
+.WidgetReceitaTitle4 {
+	background-color: #d88383;
+}

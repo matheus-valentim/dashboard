@@ -1,0 +1,122 @@
+.datatable {
+	height: 600px;
+	padding: 20px;
+	overflow-y: scroll;
+}
+.usuariosTable {
+	width: 100%;
+	text-align: left;
+	border-spacing: 0px;
+}
+.datatableDiv {
+	display: flex;
+	gap: 30px;
+}
+.table-tr:hover {
+	background-color: rgba(126, 126, 126, 0.216);
+}
+.datatableTitle {
+	width: 100%;
+	font-size: 24px;
+	color: gray;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.link-exportar {
+	text-decoration: none;
+	color: #341b98;
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid #341b98;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: inherit;
+}
+.link-exportar:hover {
+	background-color: #341b98;
+	color: white;
+}
+.link-usuarios {
+	text-decoration: none;
+	color: green;
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid green;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.link-usuarios:hover {
+	background-color: green;
+	color: white;
+}
+.cellWithImg {
+	display: flex;
+	align-items: center;
+}
+.cellImg {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 20px;
+}
+
+.cellWithStatus {
+	padding: 5px;
+	border-radius: 5px;
+}
+.active {
+	background-color: rgba(0, 128, 0, 0.05);
+	color: green;
+	width: 60px;
+	padding: 4px;
+	border-radius: 5px;
+}
+.pending {
+	background-color: rgba(255, 217, 0, 0.221);
+	color: goldenrod;
+	width: 75px;
+	padding: 5px;
+	border-radius: 5px;
+}
+.passive {
+	background-color: rgba(255, 0, 0, 0.05);
+	color: crimson;
+	max-width: 60px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.cellAction {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.viewButton {
+	padding: 2px 5px;
+	border-radius: 5px;
+	color: rgb(77, 77, 151);
+	border: 1px dotted rgba(0, 0, 139, 0.596);
+	cursor: pointer;
+	background-color: inherit;
+}
+.viewButton:hover {
+	background-color: rgb(77, 77, 151);
+	color: white;
+}
+.deleteButton:hover {
+	color: white;
+	background-color: crimson;
+}
+.deleteButton {
+	padding: 2px 5px;
+	border-radius: 5px;
+	color: crimson;
+	border: 1px dotted rgba(220, 20, 60, 0.6);
+	cursor: pointer;
+	background-color: inherit;
+}

@@ -1,0 +1,139 @@
+.Navbar {
+	height: 50px;
+	border-bottom: 0.5px solid rgb(231, 228, 228);
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	color: #555;
+
+	background-color: #dbdaff;
+}
+.wrapper {
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.searchNavbar {
+	display: flex;
+	align-items: center;
+	border: 0.5px solid lightgray;
+	padding: 3px;
+}
+input {
+	border: none;
+	outline: none;
+	background: transparent;
+}
+input::placeholder {
+	font-size: 12px;
+}
+
+.items {
+	display: flex;
+	align-items: center;
+}
+.item {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	position: relative;
+	color: inherit;
+	cursor: pointer;
+}
+.language {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	position: relative;
+	color: inherit;
+	cursor: pointer;
+}
+.item:hover {
+	background-color: rgba(126, 126, 126, 0.216);
+}
+.icon-navbar {
+	font-size: 20px;
+}
+
+.avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.notification_icon {
+	cursor: pointer;
+}
+.select-navbar {
+	border: 0.1px solid rgba(211, 211, 211, 0.107);
+	background-color: inherit;
+	color: #555;
+}
+
+.notification_wrap {
+	position: relative;
+}
+.dropdown {
+	width: 350px;
+	height: auto;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.125);
+	position: absolute;
+	top: 50px;
+	right: 0;
+	z-index: 10;
+}
+
+.dropdown .notify_item {
+	display: flex;
+	align-items: center;
+	flex-basis: 100%;
+	padding: 10px 35px;
+	border-bottom: 1px solid #dbdaff;
+}
+
+.dropdown .notify_item:last-child {
+	border-bottom: 0px;
+}
+
+.dropdown .notify_item .notify_img {
+	margin-right: 20px;
+}
+
+.dropdown .notify_item .notify_info p {
+	margin-bottom: 5px;
+}
+
+.dropdown .notify_item .notify_info p span {
+	color: #605dff;
+	margin-left: 5px;
+}
+
+.dropdown .notify_item .notify_info .notify_time {
+	color: #c5c5e6;
+	font-size: 12px;
+}
+
+.dropdown:before {
+	content: "";
+	position: absolute;
+	top: -26px;
+	right: -13px;
+	transform: translateX(-50%);
+	border: 13px solid;
+	border-color: transparent transparent #fff transparent;
+}
+
+.notification_wrap .close-noti {
+	display: none;
+}
+.dropdown .notify_item:hover {
+	background-color: #c5c5e6;
+}
+.notify_item {
+	text-decoration: none;
+	color: #555;
+}

@@ -1,0 +1,9 @@
+.charth2 {
+	font-size: 1.3rem;
+	margin: 10px 0px;
+}
+.containerChartReceita {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}

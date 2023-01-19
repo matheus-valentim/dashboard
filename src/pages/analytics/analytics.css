@@ -1,0 +1,30 @@
+.analitycs {
+	display: flex;
+	flex: 6;
+}
+.analitycsWrapper {
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+}
+.containerAnalytics {
+	width: 100%;
+}
+.chartTempo {
+	flex: 4;
+}
+.teste01 {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.analytics01 {
+	flex: 1;
+}
+.analytics02 {
+	flex: 2;
+}
+.analiticsH2 {
+	text-align: center;
+}

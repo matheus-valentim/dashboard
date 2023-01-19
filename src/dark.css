@@ -1,0 +1,98 @@
+.dark {
+	background-color: #111;
+	color: rgb(156, 156, 156);
+}
+.dark .chartGrid {
+	stroke: rgba(228, 228, 228, 0.219);
+}
+
+.dark .table {
+	background-color: #111;
+}
+.dark .tableCell {
+	color: gray;
+}
+
+.dark .Navbar {
+	color: #999;
+	border-color: #333;
+	background-color: #111;
+}
+.app.dark .search {
+	border-color: gray;
+}
+.dark .sidebar {
+	background-color: #111;
+	border-color: #333;
+}
+.dark .top .logo {
+	color: #999;
+}
+
+.dark hr {
+	border-color: #333;
+}
+
+.dark li:hover {
+	background-color: #333;
+}
+.dark .icon {
+	color: #999;
+}
+
+.dark .datagrid {
+	color: gray;
+	border: none;
+}
+.dark .datagrid viewButton,
+.dark .datagrid .deleteButton,
+.dark .datagrid .cellWithStatus {
+	color: gray;
+	border: none;
+}
+.dark .timeLline {
+	background-color: #333;
+}
+.dark input {
+	background-color: transparent;
+}
+.dark .timeline__point {
+	position: relative;
+	background: #ffffff;
+}
+.dark .timeline__middle {
+	background: #ffffff;
+}
+.dark .product-title {
+	color: #ffffff;
+}
+.dark .product-title::after {
+	color: #ffffff;
+}
+.dark .product-detail h2 {
+	color: #ffffff;
+}
+.dark .produto-conteudo {
+	background-image: linear-gradient(rgb(62, 62, 62), rgb(17, 17, 17));
+}
+.dark .produto-nome {
+	color: white;
+}
+.dark .produto-info {
+	background-color: black;
+}
+.dark .rbc-event {
+	background-color: #695cfe;
+}
+.dark .rbc-off-range-bg {
+	background-color: rgb(46, 17, 17);
+}
+.dark .rbc-selected {
+	background-color: #341b98 !important;
+}
+.dark .rbc-today {
+	background-color: #333;
+}
+.dark .messages__item--visitor {
+	color: black;
+}

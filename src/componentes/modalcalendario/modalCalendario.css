@@ -1,0 +1,87 @@
+.modalCalendario {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.185);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+}
+.modalContainerCalendario {
+	width: 400px;
+	height: 350px;
+	border-radius: 12px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+}
+.titleCloseBtnModalCalendario {
+	display: flex;
+	justify-content: space-between;
+	flex: 1;
+}
+.titleCloseBtnModalCalendario button {
+	position: relative;
+	top: -15px;
+	background-color: transparent;
+	border: none;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.nada {
+	content: " ";
+}
+.formModalCalendario {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.bodyModalCalendario {
+	display: flex;
+	justify-content: center;
+	flex: 5;
+}
+.footerModalCalendario {
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+.link-exportar {
+	text-decoration: none;
+	color: #341b98;
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid #341b98;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: inherit;
+}
+.link-exportar:hover {
+	background-color: #341b98;
+	color: white;
+}
+.exluirBotao {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid crimson;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: inherit;
+	color: crimson;
+}
+.exluirBotao:hover {
+	background-color: crimson;
+	color: white;
+}
