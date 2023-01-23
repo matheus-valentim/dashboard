@@ -1,10 +1,13 @@
+import { useTransition } from "react";
 import { CircularProgressbar } from "react-circular-progressbar";
+import { useTranslation } from "react-i18next";
 import "./record.css";
 export default function Record() {
+	const { t } = useTranslation();
 	return (
 		<div className="featured">
 			<div className="top-rendimento">
-				<h1 className="title">Record de Vendas</h1>
+				<h1 className="title">{t("Sales Record-record")}</h1>
 				<svg
 					width="24"
 					height="24"
@@ -22,24 +25,24 @@ export default function Record() {
 				<div className="featuredChart">
 					<CircularProgressbar value={70} text={"70%"} strokeWidth={5} />
 				</div>
-				<p className="title-rendimento">Distância até o record</p>
+				<p className="title-rendimento">{t("Distance to the record-record")}</p>
 				<p className="amount">$4200,00</p>
-				<p className="desc">a contagem é feita mensalmente</p>
+				<p className="desc">{t("Counting is done monthly.-record")}</p>
 				<div className="summary">
 					<div className="item-rendimento">
-						<div className="itemTitle">Record</div>
+						<div className="itemTitle">{t("Record-record")}</div>
 						<div className="itemResult positive-rendimento">
 							<div className="resultAmount">$12.4k</div>
 						</div>
 					</div>
 					<div className="item-rendimento">
-						<div className="itemTitle">Atual</div>
+						<div className="itemTitle">{t("Current-record")}</div>
 						<div className="itemResult negative">
 							<div className="resultAmount">$12.4k</div>
 						</div>
 					</div>
 					<div className="item-rendimento">
-						<div className="itemTitle">diferença</div>
+						<div className="itemTitle">{t("Difference-record")}</div>
 						<div className="itemResult negative">
 							<div className="resultAmount">$12.4k</div>
 						</div>

@@ -7,12 +7,13 @@
 }
 
 .title-chart {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	display: flex;
 	justify-content: space-between;
 }
 .ChartDiv {
 	display: flex;
+	align-items: center;
 	gap: 10px;
 }
 .ChartButton {
@@ -25,6 +26,7 @@
 	border-radius: 5px;
 	cursor: pointer;
 	background-color: inherit;
+	height: 30px;
 }
 .ChartButtonAtivo {
 	color: white;

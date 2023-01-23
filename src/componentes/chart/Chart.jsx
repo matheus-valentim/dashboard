@@ -72,7 +72,7 @@ export default function Chart({ aspect }) {
 	return (
 		<div className="chart">
 			<div className="title-chart">
-				<p>{t(title[data - 1])}</p>
+				<h2 className="charth2">{t(title[data - 1])}</h2>
 				<div className="ChartDiv">
 					<button
 						onClick={(e) => {

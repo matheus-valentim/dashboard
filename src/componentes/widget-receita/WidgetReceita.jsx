@@ -18,7 +18,7 @@ export default function WidgetReceita() {
 				<div className="WidgetReceitaLeft">
 					<p className="WidgetReceitaTitle WidgetReceitaTitle1">+13%</p>
 					<p className="WidgetReceitaNum">$999,999</p>
-					<p className="link-widget">Lucro Bruto</p>
+					<p className="link-widget">{t("Gross Profit-WidgetReceita")}</p>
 				</div>
 				<ResponsiveContainer width="50%" aspect={1.7 / 1}>
 					<AreaChart
@@ -41,7 +41,7 @@ export default function WidgetReceita() {
 				<div className="WidgetReceitaLeft">
 					<p className="WidgetReceitaTitle WidgetReceitaTitle2">+13%</p>
 					<p className="WidgetReceitaNum">$999,999</p>
-					<p className="link-widget">Lucro Líquido</p>
+					<p className="link-widget">{t("Net Profit-WidgetReceita")}</p>
 				</div>
 				<ResponsiveContainer width="50%" aspect={1.7 / 1}>
 					<AreaChart
@@ -64,7 +64,7 @@ export default function WidgetReceita() {
 				<div className="WidgetReceitaLeft">
 					<p className="WidgetReceitaTitle WidgetReceitaTitle3">+13%</p>
 					<p className="WidgetReceitaNum">$999,999</p>
-					<p className="link-widget">Receita Total</p>
+					<p className="link-widget">{t("Total Revenue-WidgetReceita")}</p>
 				</div>
 
 				<ResponsiveContainer width="50%" aspect={1.7 / 1}>
@@ -88,7 +88,7 @@ export default function WidgetReceita() {
 				<div className="WidgetReceitaLeft">
 					<p className="WidgetReceitaTitle WidgetReceitaTitle4">+13%</p>
 					<p className="WidgetReceitaNum">$999,999</p>
-					<p className="link-widget">Despesa total</p>
+					<p className="link-widget">{t("Total Expense-WidgetReceita")}</p>
 				</div>
 				<ResponsiveContainer width="50%" aspect={1.7 / 1}>
 					<AreaChart
