@@ -96,3 +96,10 @@
 .dark .messages__item--visitor {
 	color: black;
 }
+.dark .tooltip {
+	background-color: #333;
+	color: white;
+}
+.dark .tooltip::before {
+	border-right: 16px solid #333;
+}

@@ -13,6 +13,34 @@ export default function ProdutoDetalhe() {
 	const [loading, setLoading] = useState("");
 	const { t } = useTranslation();
 
+	const MAGNIFY_SIZE = 200;
+	const MAGNIFY_SIZE_HALF = MAGNIFY_SIZE / 2;
+
+	const [magnifyStyle, setMagnifyStyle] = useState({
+		backgroundImage: `url(${principalImage})`,
+	});
+
+	const handleMouseMove = (e) => {
+		const { offsetX, offsetY, target } = e.nativeEvent;
+		const { offsetWidth, offsetHeight } = target;
+
+		const xPercentage = (offsetX / offsetWidth) * 100;
+		const yPercentage = (offsetY / offsetHeight) * 100;
+
+		setMagnifyStyle((prev) => ({
+			...prev,
+			display: "block",
+			top: `${offsetY - MAGNIFY_SIZE_HALF}px`,
+			left: `${offsetX - MAGNIFY_SIZE_HALF}px`,
+			backgroundPosition: `${xPercentage}% ${yPercentage}%`,
+		}));
+	};
+
+	const handleMouseLeave = (e) => {
+		setMagnifyStyle((prev) => ({ ...prev, display: "none" }));
+		console.log(principalImage);
+	};
+
 	useEffect(() => {
 		setLoading(true);
 		setPosition(window.location.pathname.slice(10));
@@ -21,8 +49,16 @@ export default function ProdutoDetalhe() {
 	useEffect(() => {
 		setLoading(true);
 		setPrincipalImage(todosProdutos[position].img1);
+		setMagnifyStyle({
+			backgroundImage: `url(${todosProdutos[position].img1})`,
+		});
 		setLoading(false);
 	}, [position]);
+	useEffect(() => {
+		setMagnifyStyle({
+			backgroundImage: `url(${principalImage})`,
+		});
+	}, [principalImage]);
 	return (
 		<div className="card-wrapper">
 			<div className="Header-card">
@@ -40,7 +76,11 @@ export default function ProdutoDetalhe() {
 									className="principal-image"
 									src={principalImage}
 									alt="shoe image"
+									draggable={false}
+									onMouseMove={handleMouseMove}
+									onMouseLeave={handleMouseLeave}
 								/>
+								<div className="magnify" style={magnifyStyle}></div>
 							</div>
 						</div>
 						<div className="img-select">
@@ -215,6 +255,7 @@ export default function ProdutoDetalhe() {
 								Consequatur, perferendis eius. Dignissimos, labore suscipit.
 								Unde.
 							</p>
+
 							<ul>
 								<li className="listaCor">
 									{t("Color-ProdutosDetalhe")}

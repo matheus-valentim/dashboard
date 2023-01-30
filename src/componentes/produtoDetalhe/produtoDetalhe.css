@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
-.img-display {
-	overflow: hidden;
-}
 .principal-image {
 	height: 400px;
 }
@@ -14,6 +11,8 @@
 	display: flex;
 	justify-content: center;
 	transition: all 0.5s ease;
+	position: relative;
+	cursor: crosshair;
 }
 
 .img-select {
@@ -213,4 +212,17 @@
 .img-item button {
 	border: none;
 	outline: none;
+}
+.magnify {
+	width: 200px;
+	height: 200px;
+	background-size: 800%;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 2px white solid;
+	border-radius: 50%;
+	display: none;
+	pointer-events: none;
+	position: absolute;
+	z-index: 1000000;
 }

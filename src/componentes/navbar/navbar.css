@@ -62,7 +62,11 @@ input::placeholder {
 	height: 50px;
 	border-radius: 50%;
 }
-
+.avatarNavbarPerfil {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
 .notification_icon {
 	cursor: pointer;
 }

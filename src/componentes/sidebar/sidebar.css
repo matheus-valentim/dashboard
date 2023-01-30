@@ -349,3 +349,49 @@ header .image-text .profession {
 .dark .text {
 	color: #ccc;
 }
+
+.tooltip {
+	position: absolute;
+	left: calc(100% + 5px);
+	z-index: 3;
+	background: #ddd;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	padding: 7px 12px;
+	border-radius: 0px 4px 4px 0px;
+	font-size: 15px;
+	font-weight: 400;
+	opacity: 0;
+	white-space: nowrap;
+	pointer-events: none;
+	color: black;
+}
+.tooltip:hover {
+	background-color: #000000c5;
+	color: white;
+}
+.tooltip:hover::before {
+	border-right: 16px solid #000000c5;
+}
+li:hover .tooltip::before {
+	opacity: 1;
+	pointer-events: auto;
+	transition: all 0.4s ease;
+}
+.tooltip::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	right: calc(100%);
+	bottom: 0px;
+	border-top: 17px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-right: 16px solid #ddd;
+}
+li:hover .tooltip {
+	opacity: 1;
+	pointer-events: auto;
+	transition: all 0.4s ease;
+	transform: translateY(-10%);
+}
