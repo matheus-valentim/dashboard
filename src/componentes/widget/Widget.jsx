@@ -70,7 +70,7 @@ export default function Widget({ type }) {
 			data = {
 				title: "EARNINGS",
 				isMoney: true,
-				page: "/users",
+				page: "/receita",
 				link: "View net earnings",
 				icon: (
 					<svg
@@ -94,7 +94,7 @@ export default function Widget({ type }) {
 			data = {
 				title: "BALANCE",
 				isMoney: true,
-				page: "/users",
+				page: "/balance",
 				link: "See details",
 				icon: (
 					<svg

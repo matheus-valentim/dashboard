@@ -28,13 +28,20 @@ export default function User() {
 			<Sidebar />
 			<div className="singleContainer">
 				<Navbar />
+				{position ? <div>
+					<div className="Header-card">
+					<h1 className="breadcrumb-card">{position[0].username}</h1>
+					<Link to="/usuarios" className="voltar-card">
+						Voltar
+					</Link>
+				</div>
 				<div className="top-user">
 					<div className="left-user">
 						<Link to={"/usuarios/" + atual + "/editar"} className="editButton">
 							{t("Edit-user")}
 						</Link>
 						<h1 className="title-user">{t("Information-user")}</h1>
-						{position ? (
+						
 							<div className="itemUser">
 								<img src={position[0].img} alt="" className="itemImg" />
 								<div className="details">
@@ -57,7 +64,7 @@ export default function User() {
 									</div>
 								</div>
 							</div>
-						) : null}
+						
 					</div>
 					<div className="right-User">
 						<Chart
@@ -70,6 +77,8 @@ export default function User() {
 					<h1 className="title-user">{t("Last Transactions-user")}</h1>
 					<List />
 				</div>
+
+				</div> : null}
 			</div>
 		</div>
 	);

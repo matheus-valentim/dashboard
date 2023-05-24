@@ -41,6 +41,7 @@ export default function Receita() {
 				<div className="tableReceita">
 					<div className="containerTableReceita">
 						<h2 className="charth2">Ultimas Transações</h2>
+
 						<div className="overflowReceita">
 							<table className="tableReceitaItem">
 								<thead>

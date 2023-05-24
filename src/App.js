@@ -25,6 +25,7 @@ import Desenvolvimento from "./pages/desenvolvimento/Pedido";
 function App() {
 	const [darkModeOn, setDarkModeOn] = useState(false);
 	const [openNotify, setOpenNotify] = useState(false);
+	const [openPerfil, setOpenPerfil] = useState(false);
 	const [Lingua, setLingua] = useState("en");
 	const [users, setUsers] = useState(userRows);
 	const [todosProdutos, setTodosProdutos] = useState(todosProdutosJSON);
@@ -89,6 +90,8 @@ function App() {
 					setDarkModeOn,
 					openNotify,
 					setOpenNotify,
+					openPerfil,
+					setOpenPerfil,
 					users,
 					setUsers,
 					Lingua,
@@ -127,6 +130,7 @@ function App() {
 						<Route path="/pedidos" element={<Pedidos />} />
 						<Route path="/pedidos/:pedidoID" element={<Desenvolvimento />} />
 						<Route path="/receita/transacao" element={<Desenvolvimento />} />
+					<Route path="/balance" element={<Desenvolvimento/>}/>
 						<Route path="/produtos/:produtoID" element={<Produto />} />
 						<Route path="/calendario" element={<Calendario />} />
 						<Route path="/Receita" element={<Receita />} />

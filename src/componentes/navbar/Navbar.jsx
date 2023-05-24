@@ -13,6 +13,8 @@ export default function Navbar() {
 		setDarkModeOn,
 		openNotify,
 		setOpenNotify,
+		openPerfil,
+		setOpenPerfil,
 		Lingua,
 		setLingua,
 	} = useContext(darkModeContext);
@@ -238,11 +240,58 @@ export default function Navbar() {
 						</svg>
 					</div>
 					<div className="item">
-						<img
-							src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-							alt=""
-							className="avatarNavbarPerfil"
-						/>
+						<div className="notification_wrap">
+							<div
+								className=""
+								onClick={() => {
+									if (openPerfil) {
+										setOpenPerfil(false);
+									} else {
+										setOpenPerfil(true);
+									}
+								}}
+							>
+								<img
+									src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+									alt=""
+									className="avatarNavbarPerfil"
+								/>
+							</div>
+							<div className={openPerfil ? "dropdownPerfil" : "close-noti"}>
+								<Link to="/notificacoes" className="perfil_noti">
+									<div className="perfil_item">
+										<i className=" icon-sidebar">
+											<svg
+												width="20"
+												height="20"
+												viewBox="0 0 20 20"
+												className="sidebar-svg"
+												x
+											>
+												<path d="M9.99984 13.5C9.07158 13.5 8.18134 13.1313 7.52497 12.4749C6.86859 11.8185 6.49984 10.9283 6.49984 10C6.49984 9.07174 6.86859 8.18151 7.52497 7.52513C8.18134 6.86875 9.07158 6.5 9.99984 6.5C10.9281 6.5 11.8183 6.86875 12.4747 7.52513C13.1311 8.18151 13.4998 9.07174 13.4998 10C13.4998 10.9283 13.1311 11.8185 12.4747 12.4749C11.8183 13.1313 10.9281 13.5 9.99984 13.5ZM17.4298 10.97C17.4698 10.65 17.4998 10.33 17.4998 10C17.4998 9.67 17.4698 9.34 17.4298 9L19.5398 7.37C19.7298 7.22 19.7798 6.95 19.6598 6.73L17.6598 3.27C17.5398 3.05 17.2698 2.96 17.0498 3.05L14.5598 4.05C14.0398 3.66 13.4998 3.32 12.8698 3.07L12.4998 0.420002C12.4795 0.302219 12.4182 0.195429 12.3267 0.118553C12.2351 0.0416778 12.1194 -0.000319774 11.9998 1.83347e-06H7.99984C7.74984 1.83347e-06 7.53984 0.180002 7.49984 0.420002L7.12984 3.07C6.49984 3.32 5.95984 3.66 5.43984 4.05L2.94984 3.05C2.72984 2.96 2.45984 3.05 2.33984 3.27L0.339839 6.73C0.209839 6.95 0.26984 7.22 0.45984 7.37L2.56984 9C2.52984 9.34 2.49984 9.67 2.49984 10C2.49984 10.33 2.52984 10.65 2.56984 10.97L0.45984 12.63C0.26984 12.78 0.209839 13.05 0.339839 13.27L2.33984 16.73C2.45984 16.95 2.72984 17.03 2.94984 16.95L5.43984 15.94C5.95984 16.34 6.49984 16.68 7.12984 16.93L7.49984 19.58C7.53984 19.82 7.74984 20 7.99984 20H11.9998C12.2498 20 12.4598 19.82 12.4998 19.58L12.8698 16.93C13.4998 16.67 14.0398 16.34 14.5598 15.94L17.0498 16.95C17.2698 17.03 17.5398 16.95 17.6598 16.73L19.6598 13.27C19.7798 13.05 19.7298 12.78 19.5398 12.63L17.4298 10.97Z" />
+											</svg>
+										</i>
+										<p>Configurações</p>
+									</div>
+								</Link>
+								<Link to="/notificacoes" className="perfil_noti">
+									<div className="perfil_item">
+										<i className="bx bx-log-out icon-sidebar">
+											<svg
+												className="sidebar-svg"
+												width="20"
+												height="21"
+												viewBox="0 0 19 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path d="M3 16H5V18H17V2H5V4H3V1C3 0.734784 3.10536 0.48043 3.29289 0.292893C3.48043 0.105357 3.73478 0 4 0H18C18.2652 0 18.5196 0.105357 18.7071 0.292893C18.8946 0.48043 19 0.734784 19 1V19C19 19.2652 18.8946 19.5196 18.7071 19.7071C18.5196 19.8946 18.2652 20 18 20H4C3.73478 20 3.48043 19.8946 3.29289 19.7071C3.10536 19.5196 3 19.2652 3 19V16ZM5 9H12V11H5V14L0 10L5 6V9Z" />
+											</svg>
+										</i>
+										<p>Sair</p>
+									</div>
+								</Link>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

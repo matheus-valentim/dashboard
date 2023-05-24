@@ -58,7 +58,7 @@ export default function Chart({ aspect }) {
 		{ name: `${t("November")}`, Total: 1700 },
 		{ name: `${t("December")}`, Total: 900 },
 	];
-	const { openNotify } = useContext(darkModeContext);
+	const { openNotify,openPerfil } = useContext(darkModeContext);
 
 	useEffect(() => {
 		if (data == 1) {
@@ -112,7 +112,7 @@ export default function Chart({ aspect }) {
 					height={250}
 					data={dataAtual}
 					margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
-					className={openNotify ? "importante" : null}
+					className={openNotify || openPerfil ? "importante" : null}
 				>
 					<defs>
 						<linearGradient id="total" x1="0" y1="0" x2="0" y2="1">
@@ -122,7 +122,7 @@ export default function Chart({ aspect }) {
 					</defs>
 					<XAxis dataKey="name" stroke="gray" />
 					<CartesianGrid strokeDasharray="3 3" className="chartGrid" />
-					{openNotify ? null : <Tooltip />}
+					{openNotify || openPerfil? null : <Tooltip />}
 
 					<Area
 						type="monotone"
