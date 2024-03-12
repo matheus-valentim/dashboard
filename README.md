@@ -8,6 +8,10 @@
 
 O projeto está em pause no momento ❌.
  
+### App em produção
+
+para ver o app em procução <a href="https://dashboard-ten-chi.vercel.app" target="_blank">Clique aqui.</a>
+
 
 ## 🚀 Instalando Dashboard
 
