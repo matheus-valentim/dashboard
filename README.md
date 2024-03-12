@@ -1,4 +1,4 @@
-# Nome do projeto
+# Dashboard
  
 <img src="imagem.png" alt="Exemplo imagem">
 
@@ -9,9 +9,9 @@
 O projeto está em pause no momento ❌.
  
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Instalando Dashboard
 
-Para instalar o <nome_do_projeto>, siga estas etapas:
+Para instalar o Dashboard, siga estas etapas:
 
  
 Windows:
