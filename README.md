@@ -1,6 +1,6 @@
 # Dashboard
  
-<img src="imagem.png" alt="Exemplo imagem">
+<img src="dashboard.avif" alt="Exemplo imagem">
 
 > Esse projeto foi feito para ser um dashboard de um e-commerce onde vão existir funcionalidades desde rastreio de produtos e exportação de dados, até conversas entre adminitradores, calendário para marcar reuniões e muito mais. 
 
